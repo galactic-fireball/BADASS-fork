@@ -1,0 +1,2149 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://galactic-fireball.github.io/BADASS/changes/">
+      
+      
+        <link rel="prev" href="../documentation/usage/other/">
+      
+      
+        <link rel="next" href="../documentation/tutorial/overview/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Changelog - BADASS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather Sans";--md-code-font:"Red Hat Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#new-in-version-1100" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BADASS Documentation" class="md-header__button md-logo" aria-label="BADASS Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 10.5c0 .8-.7 1.5-1.5 1.5.8 0 1.5.7 1.5 1.5V15a2 2 0 0 1-2 2H9V7h4a2 2 0 0 1 2 2zM13 15v-2h-2v2zm0-4V9h-2v2zM3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm2 0v14h14V5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BADASS Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Light Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/galactic-fireball/BADASS" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BADASS
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BADASS Documentation" class="md-nav__button md-logo" aria-label="BADASS Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 10.5c0 .8-.7 1.5-1.5 1.5.8 0 1.5.7 1.5 1.5V15a2 2 0 0 1-2 2H9V7h4a2 2 0 0 1 2 2zM13 15v-2h-2v2zm0-4V9h-2v2zM3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm2 0v14h14V5z"/></svg>
+
+    </a>
+    BADASS Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/galactic-fireball/BADASS" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BADASS
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Usage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I/O Options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/fit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fitting Options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/mcmc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCMC Options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Component Options
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Model Component Options
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/components/components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Template Components
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/components/lines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Line Components
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/components/losvd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LOSVD Fitting (pPXF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/components/host/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Host Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/components/power/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Power Law
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/components/polynomial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/components/optical_feii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Optical Fe II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/components/uv_iron/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UV Iron
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/components/balmer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Balmer Continuum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/config_testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Output Options
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Output Options
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/output/plotting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plotting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/usage/other/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Other Options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#new-in-version-1100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New in Version 11.0.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-in-version-1020" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New in Version 10.2.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#older-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Older Versions:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Older Versions:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1000-1030" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.0.0 - 10.3.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#931" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#930" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#920-922" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2.0 - 9.2.2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#917" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1.7
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#916" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1.6
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#900-911" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.0.0 - 9.1.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8014-8015" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.0.14 - 8.0.15
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#800-8013" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.0.0 - 8.0.13
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#772-776" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7.2 - 7.7.6
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#771" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#770" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#760-768" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6.0 - 7.6.8
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#750-753" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5.0 - 7.5.3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#741-743" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4.1 - 7.4.3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#740" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#731-733" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3.1 - 7.3.3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#730" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#720" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#710" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#700" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.0.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#600" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.0.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100-500" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.0 - 5.0.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spectral Fitting Tutorial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Spectral Fitting Tutorial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/tutorial/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/tutorial/profiles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Line profiles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/tutorial/templates.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/tutorial/bootstrap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bootstrap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/tutorial/mcmc.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCMC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/tutorial/ifu.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IFU
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#new-in-version-1100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New in Version 11.0.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-in-version-1020" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New in Version 10.2.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#older-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Older Versions:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Older Versions:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1000-1030" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.0.0 - 10.3.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#931" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#930" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#920-922" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2.0 - 9.2.2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#917" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1.7
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#916" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1.6
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#900-911" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.0.0 - 9.1.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8014-8015" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.0.14 - 8.0.15
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#800-8013" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.0.0 - 8.0.13
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#772-776" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7.2 - 7.7.6
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#771" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#770" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#760-768" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6.0 - 7.6.8
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#750-753" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5.0 - 7.5.3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#741-743" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4.1 - 7.4.3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#740" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#731-733" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3.1 - 7.3.3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#730" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#720" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#710" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#700" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.0.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#600" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.0.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100-500" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.0 - 5.0.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Changelog</h1>
+
+<h2 id="new-in-version-1100">New in Version 11.0.0<a class="headerlink" href="#new-in-version-1100" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Code has been reorganized and made more modular.</li>
+<li>An options schema has been developed: see <code>utils/schema.py</code>.</li>
+<li>Supported input types have been moved to individual <code>BadassInput</code> classes: see <code>input/</code>.</li>
+<li>Templates have been moved to individual <code>BadassTemplate</code> classes: see <code>components/templates/</code>.</li>
+<li>The main fitting execution (including line/config testing, max likelihood bootstrapping, and MCMC) has been moved to a <code>BadassRunContext</code> class.</li>
+<li>Inherent support for JWST NIRSpec and MIRI instruments.</li>
+<li>Plotting (<code>utils/plotting.py</code>) and logging (<code>utils/logger.py</code>) functionality moved to separate files.</li>
+</ul>
+<h2 id="new-in-version-1020">New in Version 10.2.0<a class="headerlink" href="#new-in-version-1020" title="Permanent link">&para;</a></h2>
+<ul>
+<li>New line and configuration testing framework. See <a href="#line-testing-and-options">Line Testing and Options</a>.</li>
+<li>Line component options.  See <a href="#line-component-options">Line Component Options</a>.</li>
+<li>Improvements in autocorrelation calculations.</li>
+<li>W80 now a standard output parameter for all lines.</li>
+<li>Outputs line widths that are both corrected and uncorrected for input resolution</li>
+<li>BADASS now normalizes the spectrum internally for fitting purposes.</li>
+<li>Various improvements to global optimizer used in initial fit.</li>
+<li><strong>Note</strong>: The algorithm used for scaling the noise to achieve a <span class="arithmatex">\(\chi_\nu^2=1\)</span> was found to be numerically unstable and users should use <code>fit_stat='ML'</code> instead.</li>
+</ul>
+<h2 id="older-versions">Older Versions:<a class="headerlink" href="#older-versions" title="Permanent link">&para;</a></h2>
+<h3 id="1000-1030">10.0.0 - 10.3.0<a class="headerlink" href="#1000-1030" title="Permanent link">&para;</a></h3>
+<ul>
+<li>New generalized line component option for easily adding n number of line components; deprecates 'outflow' components.</li>
+<li>W80 now a standard line parameter.</li>
+<li>New testing suite that incorporates testing for multiple components, lines, metrics, etc. with the 
+  ability to continue fitting with the best model.</li>
+<li>Fixed autocorrelation time calculation; now always produces a time.</li>
+<li>PPOLY polynomial no longer an option pending bug fixes.</li>
+<li>To avoid an excessive number of plots, we now limit plotting of histograms to free fitted parameters.</li>
+<li>Configuration testing.</li>
+<li>Removed astro-bifrost due to grpcio dependency problems; using old metal masking algorithm until fixed.</li>
+<li>BADASS now internally normalizes the spectrum for optimization reasons.</li>
+<li>Bug fixes and minor changes.</li>
+<li>Reweighting noise to achieve RCHI2=1 now done prior to bootstrapping and MCMC as needed (no longer a free parameter, which made it numerically unstable).</li>
+</ul>
+<h3 id="931">9.3.1<a class="headerlink" href="#931" title="Permanent link">&para;</a></h3>
+<ul>
+<li>BADASS-IFU<ul>
+<li>S/R computed at 5100 angstroms (rest frame) by default for use when using Voronoi binning</li>
+</ul>
+</li>
+<li>Bug fixes, and edits to default line list</li>
+<li>Add explicit flat prior</li>
+<li>Add flux normalization option (default is SDSS normalization of 1.E-17)</li>
+<li>Fixed output line SNR to be calculated even if NPIX &lt;1</li>
+<li>Constraint and initial value checking before fit takes place to prevent crashing</li>
+<li>Implemented restart file; saves all fitting options to restart fit</li>
+</ul>
+<h3 id="930">9.3.0<a class="headerlink" href="#930" title="Permanent link">&para;</a></h3>
+<ul>
+<li>NPIX and SNR (signal-to-noise ratio) is computed for all lines and now includes an uncertainty.</li>
+<li>Removed interpolation inside of fit_model() to reduce computational expense.</li>
+<li>General bug fixes and cleaning up.</li>
+</ul>
+<h3 id="920-922">9.2.0 - 9.2.2<a class="headerlink" href="#920-922" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Options for different priors on free parameters</li>
+<li>Normalization for log-likelihoods</li>
+<li>Outflow test region fix</li>
+</ul>
+<h3 id="917">9.1.7<a class="headerlink" href="#917" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Switched width parameter of all lines from FWHM to dispersion to accomodate more lines and avert problems with biased integrated velocities and dispersions. As a result, integrated dispersions and velocities are only calculated for combined lines, and FWHM are calculated for ALL lines.</li>
+<li>Added Laplace and Uniform line profiles from Sanders et al. (2020) (https://ui.adsabs.harvard.edu/abs/2020MNRAS.499.5806S/abstract; https://github.com/jls713/gh_alternative)</li>
+<li>Changed instrumental fwhm keyword to instrumental dispersion "disp_res".  Input resolution for user input spectra is still a "fwhm_res" but changes to disp_res internally.</li>
+</ul>
+<h3 id="916">9.1.6<a class="headerlink" href="#916" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Polynomial continuum components independent from LOSVD component</li>
+<li>Linearization of non-linearized non-SDSS spectra using spectres module</li>
+</ul>
+<h3 id="900-911">9.0.0 - 9.1.1<a class="headerlink" href="#900-911" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Options for likelihood function</li>
+<li>Consolidated outflow and line testing routines</li>
+</ul>
+<h3 id="8014-8015">8.0.14 - 8.0.15<a class="headerlink" href="#8014-8015" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Regular expressions now supported for soft constraints</li>
+<li>IFU support for MANGA and MUSE (General) datasets</li>
+</ul>
+<h3 id="800-8013">8.0.0 - 8.0.13<a class="headerlink" href="#800-8013" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added smoothly broken power-law spectrum for high-z objects</li>
+<li>Optimized FeII template fitting by utilizing PPXF framework</li>
+<li>Added UV FeII+FeIII template from Vestergaard &amp; Wilkes (2001)</li>
+<li>Added Balmer continuum component</li>
+<li>Added equivalent width calculations</li>
+<li>Added additional chisquared fit statistic for outflow test</li>
+<li>Voigt and Gauss-Hermite line profile options, with any number of higher order moments</li>
+<li>Emission line list options (default and user-specified)</li>
+<li>Control over soft- and hard constraints</li>
+<li>Option for non-SDSS spectrum input</li>
+<li>Interpolation over metal absorption lines</li>
+<li>Masking of bad pixels, strong emission+absorption lines (automated), and user-defined masks</li>
+<li>Various bug fixes, plotting improvements</li>
+<li>New hypothesis testing for lines and outflows (F-test remains unchanged)</li>
+<li>Continuum luminosities at 1350 Å, 3000 Å, and 5100 Å.</li>
+<li>pathlib support</li>
+<li>Corner plots (corner.py) no longer supported; user should make their own corner plots with fewer free parameters</li>
+<li>Removed BPT diagram function; user should make BPT diagrams post processing</li>
+</ul>
+<h3 id="772-776">7.7.2 - 7.7.6<a class="headerlink" href="#772-776" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed problem with FeII emission lines at the edge of the fitting region. This is done by setting the variable edge_pad=0.</li>
+<li>Fixed F-test NaN confidence bug</li>
+<li>Updated initial fitting parameters in Jupyter notebook</li>
+<li>Bug fixes and fixes to plots</li>
+</ul>
+<h3 id="771">7.7.1<a class="headerlink" href="#771" title="Permanent link">&para;</a></h3>
+<ul>
+<li>MNRAS Publication Version</li>
+<li>Added statistical F-test for ascertaining confidence between single-Gaussian and double-Gaussian models for the outflow test. Removed the ratio-of-variance test and replaced it with a sum-of-squares of residuals ratio.</li>
+<li>Added "n_basinhop" to fit_options, which allows user to choose how many initial basinhopping success iterations before a solution is achieved. This can drastically reduce the basinhopping fit time, at the expense of fit quality.</li>
+<li>Bug fixes</li>
+</ul>
+<h3 id="770">7.7.0<a class="headerlink" href="#770" title="Permanent link">&para;</a></h3>
+<ul>
+<li>NLS1 support; more detailed option for FeII template fitting (fwhm and voff fitting options); Lorentzian emission line profile option.</li>
+<li>Kovacevic et al. 2010 FeII template added, which includes a paramter for temperature.</li>
+<li>Relaxed wavelength requirement for outflow tests for higher-redshift targets.</li>
+</ul>
+<h3 id="760-768">7.6.0 - 7.6.8<a class="headerlink" href="#760-768" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Writing no-outflow parameters from test_outflows run to log file.</li>
+<li>bug fixes</li>
+</ul>
+<h3 id="750-753">7.5.0 - 7.5.3<a class="headerlink" href="#750-753" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Test outflow residual statistic replaced with f-statistic (ratio-of-variances) to compare model residuals.</li>
+<li>Added interpolation of bad pixels based on SDSS flagged pixels.</li>
+<li>bug fixes</li>
+</ul>
+<h3 id="741-743">7.4.1 - 7.4.3<a class="headerlink" href="#741-743" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Writing outflow test metrics to log file for post-fit analysis.</li>
+<li>Improved outflow/max-likelihood fitting using scipy.optimize.basinhopping. While basinhopping algorithm requires more runtime, it produces a significantly better fit, namely for the power-law slope parameter which never varies with the SLSQP algorithm due to the fact that it is stuck in a local minima.</li>
+<li>Added F-statistic (ratio of variances between no outflow and outflow model).</li>
+<li>Changed default outflow statistic settings.</li>
+<li>Bug fixes; fixed problems with parameters in 'list' option conv_type getting removed.  Now if a user-defined parameter in conv_type is wrong or removed, it uses the remaining valid parameters for convergence, or defaults to 'median'.</li>
+</ul>
+<h3 id="740">7.4.0<a class="headerlink" href="#740" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Changes to how outflow tests are performed; different residual improvement metric.</li>
+<li>New default host galaxy template for non-LOSVD fitting; using MILES 10.0 Gyr SSP with a dispersion of 100 km/s that better matches absorption features.</li>
+</ul>
+<h3 id="731-733">7.3.1 - 7.3.3<a class="headerlink" href="#731-733" title="Permanent link">&para;</a></h3>
+<ul>
+<li>bug fixes</li>
+</ul>
+<h3 id="730">7.3.0<a class="headerlink" href="#730" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Feature additions; Jupyter Notebook now supports multiprocessing in place of for loops which do not release memory.</li>
+<li>Outflow test options; outflow fitting no longer constrains velocity offset to be less than core (blueshifted), and now only tests for blueshifts if 
+  option is selected. Only amplitude and FHWM are constrained.</li>
+<li>Better outflow testing; test now compare outflow to no-outflow models to check if there is significant improvement in residuals, as well as flags
+  models in which the bounds are reached and good fits cannot be determined.</li>
+</ul>
+<h3 id="720">7.2.0<a class="headerlink" href="#720" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Feature additions; one can suppress print output completely for use when running multiprocessing pool.</li>
+</ul>
+<h3 id="710">7.1.0<a class="headerlink" href="#710" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed a critical bug in resolution correction for emission lines.</li>
+<li>misc. bug fixes</li>
+</ul>
+<h3 id="700">7.0.0<a class="headerlink" href="#700" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added minimum width for emission lines which improves outflow testing; this is based on the dispersion element of a single noise spike.</li>
+<li>Emission lines widths are now measured as Gaussian dispersion (disp) instead of Gaussian FWHM (fwhm).</li>
+<li>Added warning flags to best fit parameter files and logfile if parameters are consistent with lower or upper limits to within 1-sigma.</li>
+<li>While is is <em>not recommended</em>, one can now test for outflows in the H-alpha/[NII] region independently of the H-beta/[OIII] region, as well as
+  fit for outflows in this region.  However, if the region includes H-beta/[OIII], then the default constraint is to still use [OIII]5007 to constrain 
+  outflow amplitude, dispersion, and velocity offset.</li>
+<li>Plotting options, as well as corner plot added (defualt is <em>not</em> to output this file because there is lots of overhead).</li>
+<li>More stable outflow testing and maximum likelihood estimation.</li>
+</ul>
+<h3 id="600">6.0.0<a class="headerlink" href="#600" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Improved autocorrelation analysis and options.  One can now choose the number of autocorrelation times and tolerance for convergence.
+  Posterior sampling now restarts if solution jumps prematurely out of convergence.</li>
+<li>Simplified the Jupyter Notebook control panel and layout.  Most of the BADASS machinery is now contained in the badass_v6_0.py file.</li>
+<li>Output of black hole mass based on availability of broad line (based on Woo et al. (2015) (https://ui.adsabs.harvard.edu/abs/2015ApJ...801...38W/abstract) H-alpha BH mass estimate, and Sexton et al. (2019) (https://ui.adsabs.harvard.edu/abs/2019ApJ...878..101S/abstract) H-beta BH mass estimate.</li>
+<li>Output of systemic stellar velocity (redshift) and it's uncertainty.</li>
+<li>Output of BPT diagnostic ratios and plot if both H<span class="arithmatex">\(\alpha\)</span> and H<span class="arithmatex">\(\beta\)</span> regions are fit simultaneously.</li>
+<li>Minor memory leak improvements by optimizing plotting functions and deleting large arrays from memory via garbage collection.</li>
+<li>Fixed issues with the outflow test function.</li>
+<li>Added minimum S/N option for fitting the LOSVD.</li>
+<li>MCMC fitting with emcee is now optional with <code>mcmc_fit</code>; one can fit using only Monte Carlo bootstrapping with any number of <code>max_like_niter</code> iterations
+  to estimate uncertainties if one does not require a fit of the LOSVD.  If you need LOSVD measurements, you still must (and <em>should</em>) use emcee.</li>
+<li>One can now perform more than a single maximum likelihood fit for intial parameter values for emcee by changing <code>max_like_niter</code>, be advised this will 
+  take longer for large regions of spectra, but generally produces better initial parameter values.</li>
+<li>BPT diagnostic classification includes the classic Kewley+01 &amp; Kauffmann+03 diagram to separate starforming from AGN dominated objects, but also the [SII] diagnostic to distinguish Seyferts from LINERs.  The BPT classification is now written to the log file.</li>
+<li>Store autocorrelation times and tolerances for each parameter in a dictionary and save to a <code>.npy</code> file.</li>
+<li>Cleaned up Notebook.</li>
+<li>Major changes and improvements in how monte carlo bootstrapping is performed for maximum likelihood and outflow testing functions.</li>
+</ul>
+<h3 id="100-500">1.0.0 - 5.0.0<a class="headerlink" href="#100-500" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Very unstable, lots of bugs, kinda messy, not many options or features.  We've made a lot of front- and back-end changes and improvements.</li>
+<li>Versions 1-4 were not very flexible, and were originally optimized for Keck LRIS spectra (See 
+  <a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...878..101S/abstract">Sexton et al. (2019)</a>) and then optimized for large samples of SDSS spectra.</li>
+<li>In Version 5 we performed a complete overhaul with more options, features.  The most improved-upon feature was the addition of autocorrelation
+  analysis for parameter chain convergence, which now produces the most robust estimates.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../documentation/usage/other/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Other Options">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Other Options
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../documentation/tutorial/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascript/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
